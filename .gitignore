@@ -1,0 +1,5 @@
+# Default connection log file name
+connection_data.csv
+
+# Jetbrains IDEs
+.idea/
