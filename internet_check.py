@@ -48,7 +48,7 @@ def main(output_file: click.File, target: str, interval_s: int, verbose: bool):
             elif verbose:
                 print(f"{now.isoformat()}: {target} {response}ms")
 
-            sleep(1)
+            sleep(interval_s)
         except KeyboardInterrupt:
             if is_connction_ok or break_timestamp is None:
                 raise
